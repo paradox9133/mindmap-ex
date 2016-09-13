@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.agh.mindmapping.FileChooserActivity" >
+    <item android:id="@+id/local_disc"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_collection"
+        android:title="Przeglądaj"
+        android:showAsAction="always" />
+    <item android:id="@+id/dropbox"
+        android:orderInCategory="100"
+        android:icon="@drawable/dropbox"
+        android:title="Dropbox"
+        android:showAsAction="always" />
+</menu>

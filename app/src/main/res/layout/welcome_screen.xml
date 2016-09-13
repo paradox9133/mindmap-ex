@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+    <!--<Button-->
+    <!--android:id="@+id/welcomeNewBtn"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="55dp"-->
+    <!--android:layout_marginBottom="20dp"-->
+    <!--android:gravity="center"-->
+    <!--&lt;!&ndash;android:text="@string/createMapBtn"&ndash;&gt;-->
+    <!--/>-->
+    <!---->
+    <!--<Button-->
+    <!--android:id="@+id/welcomeReadBtn"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="25dp"-->
+    <!--android:layout_marginBottom="20dp"-->
+    <!--android:layout_below="@id/welcomeNewBtn"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/loadMapBtn"-->
+    <!--/>-->
+    <!---->
+    <!--<Button-->
+    <!--android:id="@+id/welcomeDeleteBtn"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="25dp"-->
+    <!--android:layout_marginBottom="20dp"-->
+    <!--android:layout_below="@id/welcomeReadBtn"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/deleteMapBtn"-->
+    <!--/>-->
+    <!---->
+    <!--<Button-->
+    <!--android:id="@+id/welcomeImportBtn"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="25dp"-->
+    <!--android:layout_marginBottom="20dp"-->
+    <!--android:layout_below="@id/welcomeDeleteBtn"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/str_import"-->
+    <!--/>-->
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/textViewHello"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="29dp"
+                android:text="Hello!"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:typeface="monospace"/>
+
+            <Spinner
+                android:id="@+id/spinnerStyles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewHello"
+                android:layout_marginTop="32dp"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_below="@id/spinnerStyles"
+                android:src="@drawable/classic"/>
+
+            <Button
+                android:id="@+id/buttonCreateMindMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/imageView"
+                android:text="Create New Mind Map"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
